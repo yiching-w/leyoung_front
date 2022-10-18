@@ -354,6 +354,44 @@ footer .bottom>div {
     gap: 20px;
 }
 
+/* Scroll Top Button */
+.fabArea {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+
+.fabArea a {
+    background: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 20px 0 20px;
+    margin: 5px 0;
+}
+
+.fabArea i {
+    font-size: 20px;
+    color: #fff;
+    line-height: 0;
+}
+
+.fabArea a:hover {
+    background: #055160c2;
+    color: #fff;
+}
+
+.scrollTop {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.scrollTop.active {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* 主要內容 */
 .main {
     padding-top: 100px;

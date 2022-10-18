@@ -1,8 +1,6 @@
-console.log('navbar');
-
-$('#navbar').load('../../pages/share/navbar.html', function (data) {
-    console.log('Enter Navbar');
+$('#navbar').load('../pages/share/navbar.html', function (data) {
     $('#navbar').replaceWith(data);
+
     const burger = document.querySelector('.burger')
     const navLinks = document.querySelector('ul.nav-links')
     const nav = document.querySelector('.nav')
@@ -22,20 +20,18 @@ $('#navbar').load('../../pages/share/navbar.html', function (data) {
 
 
 $('#footer').load('../pages/share/footer.html', function (data) {
-    console.log('Enter Footer');
-
     $('#footer').replaceWith(data);
-    const scrollTop = $(".scroll-top");
+
+    const scrollTop = document.querySelector('.scrollTop');
     if (scrollTop) {
         const togglescrollTop = function () {
-            window.scrollY > 100
-                ? scrollTop.addClass("active")
-                : scrollTop.removeClass("active");
-        };
-        $(document).on("scroll", togglescrollTop);
-        scrollTop.on("click", function (e) {
-            e.preventDefault();
-            $("html, body").animate({ scrollTop: 0 }, 800);
-        });
+            window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+        }
+        window.addEventListener('load', togglescrollTop);
+        document.addEventListener('scroll', togglescrollTop);
+        scrollTop.addEventListener('click', window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        }));
     }
 });
