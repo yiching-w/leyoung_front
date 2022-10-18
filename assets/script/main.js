@@ -1,4 +1,7 @@
+console.log('navbar');
+
 $('#navbar').load('../../pages/share/navbar.html', function (data) {
+    console.log('Enter Navbar');
     $('#navbar').replaceWith(data);
     const burger = document.querySelector('.burger')
     const navLinks = document.querySelector('ul.nav-links')
@@ -18,9 +21,10 @@ $('#navbar').load('../../pages/share/navbar.html', function (data) {
 });
 
 
-$('#footer').load('../../pages/share/footer.html', function (data) {
-    $('#footer').replaceWith(data);
+$('#footer').load('../pages/share/footer.html', function (data) {
+    console.log('Enter Footer');
 
+    $('#footer').replaceWith(data);
     const scrollTop = $(".scroll-top");
     if (scrollTop) {
         const togglescrollTop = function () {

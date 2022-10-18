@@ -144,7 +144,6 @@ ul.nav-links li {
 ul.nav-links li a {
     position: relative;
     color: var(--text-color);
-    font-weight: 600;
 }
 
 ul.nav-links li a::after {
@@ -344,7 +343,7 @@ footer .bottom {
     gap: 20px;
 }
 
-footer a {
+footer .bottom a {
     color: #777777 !important;
 }
 
