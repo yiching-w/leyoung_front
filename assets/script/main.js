@@ -1,4 +1,4 @@
-$('#navbar').load('/pages/share/navbar.html', function (data) {
+$('#navbar').load('../../pages/share/navbar.html', function (data) {
     $('#navbar').replaceWith(data);
     const burger = document.querySelector('.burger')
     const navLinks = document.querySelector('ul.nav-links')
@@ -18,7 +18,7 @@ $('#navbar').load('/pages/share/navbar.html', function (data) {
 });
 
 
-$('#footer').load('/pages/share/footer.html', function (data) {
+$('#footer').load('../../pages/share/footer.html', function (data) {
     $('#footer').replaceWith(data);
 
     const scrollTop = $(".scroll-top");
