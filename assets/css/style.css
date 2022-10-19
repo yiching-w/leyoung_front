@@ -3,6 +3,7 @@
     --primary-font: #359b91;
     --secondary-color: #be4a4a;
     --text-color: #23bd9e;
+    --pink-color:
 }
 
 @font-face {
@@ -56,6 +57,7 @@
 
 body {
     font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -90,6 +92,12 @@ body {
     }
 }
 
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+
 .d-flex {
     display: flex;
 }
@@ -102,6 +110,10 @@ body {
     justify-content: center;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 /* 導覽列 */
 .nav {
     position: fixed;
@@ -109,6 +121,7 @@ body {
     width: 100%;
     height: 70px;
     z-index: 9;
+    background-color: #fff;
     box-shadow: 1px 1px 5px #0003;
     transition: all 0.3s ease-in;
     display: flex;
@@ -129,6 +142,10 @@ body {
 
 .nav .logo img {
     width: 60px;
+}
+
+.nav .mobileLogo {
+    display: none;
 }
 
 ul.nav-links {
@@ -226,6 +243,17 @@ ul.nav-links.active+.burger div:last-child {
         width: 50px;
     }
 
+    .nav .mobileLogo {
+        display: block;
+    }
+
+    .navOverlay.show {
+        width: 100%;
+        height: 100%;
+        background-color: #0003;
+        position: fixed;
+    }
+
     .burger {
         display: flex;
     }
@@ -238,11 +266,10 @@ ul.nav-links.active+.burger div:last-child {
         position: fixed;
         flex-direction: column;
         top: 0;
-        right: 0;
-        width: 100%;
+        left: 0;
+        width: 70%;
         height: 100%;
-        margin-top: 75px;
-        background: #fff;
+        background: #efefef;
         transform: translateX(-100vw);
         transition: all 0.4s ease;
         overflow-y: auto;
@@ -314,6 +341,7 @@ footer .itemsList {
 footer .itemsList .items {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     font-size: 15px;
 }
@@ -354,31 +382,75 @@ footer .bottom>div {
     gap: 20px;
 }
 
-/* Scroll Top Button */
+@media (max-width:991.98px) {
+    footer .bottom {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media (max-width:576.98px) {
+    footer {
+        padding: 30px 0;
+    }
+
+    footer .top {
+        align-items: center;
+    }
+
+    footer .itemsList {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .itemsList .items {
+        gap: 12px;
+        width: calc(100%/3 - 30px);
+    }
+
+    footer .bottom {
+        align-items: start;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    footer .bottom>div {
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+}
+
+/* FAB */
 .fabArea {
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 20px;
+    bottom: 80px;
     z-index: 99999;
 }
 
-.fabArea a {
-    background: var(--color-primary);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px 20px 0 20px;
+.fabArea a:not(.scrollTop) {
+    background: var(--secondary-color);
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
+    border-radius: 50%;
     margin: 5px 0;
 }
 
-.fabArea i {
-    font-size: 20px;
-    color: #fff;
-    line-height: 0;
+.fabArea a:not(.scrollTop):hover {
+    background: var(--primary-color);
 }
 
-.fabArea a:hover {
-    background: #055160c2;
-    color: #fff;
+.fabArea a.scrollTop {
+    width: 55px;
+    height: 55px;
+}
+
+.fabArea a.scrollTop img {
+    max-width: 100%;
 }
 
 .scrollTop {
@@ -392,7 +464,42 @@ footer .bottom>div {
     opacity: 1;
 }
 
+/* 按鈕 */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 10px solid transparent;
+    transition: 0.3s all ease-in-out;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--text-color);
+    box-shadow: 0 0 0 1px var(--text-color);
+}
+
 /* 主要內容 */
 .main {
-    padding-top: 100px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+
+.pageTitle {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 45px;
 }

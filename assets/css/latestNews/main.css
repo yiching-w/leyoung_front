@@ -1,0 +1,206 @@
+.main {
+    position: relative;
+}
+
+.circle1 {
+    position: absolute;
+    top: -380px;
+    right: -537px;
+    width: 1200px;
+    height: 1200px;
+    z-index: -1;
+    background-color: #ff6464;
+    box-shadow: 0px 0px 12px #0006;
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -380px;
+    left: -537px;
+    width: 1200px;
+    height: 1200px;
+    z-index: -1;
+    background-color: #ff6464;
+    box-shadow: 0px 0px 12px #0006;
+    border-radius: 50%;
+}
+
+.hotNews {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.hotNews img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.hotNews .hoverTitle {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: var(--primary-color);
+    bottom: -25px;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.hotNews:hover .hoverTitle {
+    height: 55%;
+}
+
+.newsList {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.news {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    box-shadow: 1px 1px 10px #0002;
+    border-radius: 30px 30px 0 0;
+}
+
+.news img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.news .hoverTitle {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: var(--primary-color);
+    bottom: -88px;
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.news:hover .hoverTitle {
+    height: 65%;
+}
+
+.news .hoverTitle .content {
+    font-size: 1rem;
+}
+
+.readMore {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    color: var(--primary-font);
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    transition: 0.3s all ease-in-out;
+    transform: translateX(-20px);
+}
+
+.hotNews .readMore {
+    bottom: -55px;
+}
+
+.news .readMore {
+    bottom: -115px;
+}
+
+.readMore img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.news:hover>.readMore,
+.hotNews:hover>.readMore {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* 頁數 */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination .page {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.pagination .page:hover {
+    transform: scale(1.05);
+    background-color: var(--text-color);
+}
+
+/* 消息內頁 */
+.newsContent {
+    margin-top: 60px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 50px 0 100px;
+    text-align: center;
+}
+
+.newsContent a {
+    color: #fff !important;
+}
+
+.newsContent .title {
+    font-size: 2rem;
+}
+
+.newsContent .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    font-size: 1.2rem;
+}
+
+.newsImg,
+.newsImg img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.backBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
