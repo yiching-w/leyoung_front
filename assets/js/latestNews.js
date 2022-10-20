@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('.nav .latestNews').addClass('active');
+    $('.nav #latestNews').addClass('active');
 });

@@ -1,0 +1,357 @@
+/* 認識樂揚 */
+
+.box {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+  margin-bottom: 90px;
+}
+
+.box.name {
+  padding: 100px 20px;
+}
+
+.boxTitle {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.boxTitle .line {
+  width: 130px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.boxImg {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.box.identify .boxImg img {
+  width: 50%;
+}
+
+.box.name .boxImg img {
+  width: 50%;
+}
+
+.boxImg img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #0005;
+}
+
+.about .intro {
+  text-align: center;
+  max-width: 1000px;
+  width: 85%;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 60px auto;
+  color: #3e4551;
+}
+
+@media (max-width: 1500px) {
+  .boxTitle {
+    gap: 20px;
+  }
+
+  .boxTitle .line {
+    width: 120px;
+  }
+
+  .boxImg {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .boxTitle {
+    gap: 15px;
+    font-size: 2rem;
+  }
+
+  .boxTitle .line {
+    width: 100px;
+  }
+
+  .box.identify .boxImg img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 991px) {
+  .box {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .boxImg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin-bottom: 50px;
+  }
+
+  .box.name .boxImg img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    padding: 40px 10px;
+  }
+
+  .box.name {
+    padding: 70px 10px;
+  }
+
+  .boxTitle {
+    font-size: 1.5rem;
+  }
+
+  .boxTitle .line {
+    width: 90px;
+  }
+
+  .about .intro {
+    letter-spacing: 0.2px;
+    font-size: 1rem;
+  }
+}
+
+/* 企業願景 */
+
+.vision {
+  width: 100%;
+  height: 600px;
+  background-image: url(/assets/image/about/vision.jpg);
+  background-position: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.vision .content {
+  width: 50%;
+  height: 100%;
+  padding: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color: #23b2bdd1;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+@media (max-width: 1500px) {
+  .vision .content {
+    padding: 90px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vision .content {
+    width: 60%;
+    padding: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vision .content {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .vision {
+    height: auto;
+  }
+
+  .vision .content {
+    width: 100%;
+    gap: 20px;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 28px;
+    padding: 50px;
+  }
+
+  .vision .mobileShow {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .vision .content {
+    font-size: 0.95rem;
+    background-color: #23b2bdcc;
+    padding: 40px 20px;
+    line-height: 25px;
+  }
+}
+
+/* 組織架構 */
+
+.organization {
+  background-color: var(--primary-color);
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.organization img {
+  width: 70%;
+}
+
+@media (max-width: 991px) {
+  .organization img {
+    width: 100%;
+  }
+
+  .organization {
+    padding: 60px 10px;
+  }
+}
+
+/* 營業項目 */
+
+.business {
+  background-color: var(--primary-color);
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+
+.business li {
+  list-style-type: square;
+}
+
+@media (max-width: 768px) {
+  .business {
+    padding: 60px 40px;
+    gap: 20px;
+    font-size: 1rem;
+    align-items: start;
+  }
+}
+
+/* 里程碑 */
+
+.milestone {
+  background-color: var(--primary-color);
+  padding: 80px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 350px;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.milestone .year {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.milestone .intro {
+  max-width: 800px;
+}
+
+.milestone .intro ul li {
+  list-style-type: disc;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+@media (max-width: 1500px) {
+  .milestone {
+    gap: 200px;
+    padding: 80px 130px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .milestone {
+    gap: 100px;
+    padding: 80px 100px;
+  }
+
+  .milestone .year {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .milestone {
+    gap: 80px;
+    padding: 80px;
+  }
+
+  .milestone .year {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .milestone {
+    gap: 70px;
+    padding: 60px 40px;
+    margin-bottom: 40px;
+  }
+
+  .milestone .intro ul li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .milestone {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px 60px 45px;
+  }
+
+  .milestone .year {
+    font-size: 2.8rem;
+  }
+
+  .milestone .intro ul li {
+    font-size: 1rem;
+  }
+}
