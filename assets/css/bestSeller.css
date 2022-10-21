@@ -1,0 +1,152 @@
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle1 {
+  position: absolute;
+  top: -380px;
+  right: -537px;
+  width: 1200px;
+  height: 1200px;
+  z-index: -1;
+  background-color: #ff6464;
+  box-shadow: 0px 0px 12px #0006;
+  border-radius: 50%;
+}
+
+.circle2 {
+  position: absolute;
+  bottom: -380px;
+  left: -537px;
+  width: 1200px;
+  height: 1200px;
+  z-index: -1;
+  background-color: #ff6464;
+  box-shadow: 0px 0px 12px #0006;
+  border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+  .circle1,
+  .circle2 {
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .circle1,
+  .circle2 {
+    width: 900px;
+    height: 900px;
+  }
+  .circle1 {
+    position: absolute;
+    top: -280px;
+    right: -450px;
+  }
+  .circle2 {
+    position: absolute;
+    bottom: -400px;
+    left: -500px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .circle1,
+  .circle2 {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .circle1 {
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    right: -300px;
+  }
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    bottom: -80px;
+    left: -240px;
+  }
+}
+
+.bestSellerList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+.bestSeller {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  box-shadow: 1px 1px 10px #0002;
+  border-radius: 30px 30px 0 0;
+  height: 330px;
+}
+
+.bestSellerImg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bestSeller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+}
+
+.bestSeller .hoverTitle {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  background-color: #23b2bddd;
+  bottom: 0;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.bestSeller:hover .hoverTitle {
+  height: 45%;
+}
+
+@media (max-width: 768.98px) {
+  .bestSellerList {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 0;
+  }
+  .bestSeller {
+    height: 280px;
+  }
+  .bestSeller .hoverTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .bestSeller {
+    height: 250px;
+    margin-top: 30px;
+  }
+  .bestSeller .hoverTitle {
+    font-size: 1.3rem;
+  }
+}
