@@ -360,10 +360,109 @@
 
 /* 文林苑 */
 
-.introVideo {
-  text-align: center;
+.videoWrapperOuter {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-iframe.youtube {
-  max-width: 900px;
+.videoWrapperInner {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapperInner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.favWrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 15px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.fav {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .favWrap {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .favWrap {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .favWrap {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .favWrap {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+
+@media (min-width: 769px) {
+  .favIcon {
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+
+  .fav:hover .favIcon {
+    opacity: 1;
+  }
+
+  .fav:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #615d5988;
+  }
+}
+
+input.favInput {
+  display: none;
+}
+
+input.favInput+span {
+  position: absolute;
+  bottom: 14px;
+  left: 12px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url(/assets/image/unlike.png) center center / cover no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+input.favInput:checked+span {
+  background: url(/assets/image/like.png) center center / cover no-repeat;
 }

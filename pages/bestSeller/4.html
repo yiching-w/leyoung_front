@@ -15,6 +15,7 @@
     <!-- cdn -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <!-- custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/bestSeller.css" />
@@ -24,8 +25,8 @@
     <div id="navbar"></div>
     <main class="main page2">
         <div class="pageTitle">文林苑</div>
-        <div class="banner">
-            <img src="/assets/image/bestSeller/1.jpg" alt="文林苑" width="100%" />
+        <div class="banner" data-aos="fade-up" data-aos-duration="1000">
+            <img class="lazyload" data-src="/assets/image/bestSeller/1.jpg" alt="" width="100%" />
         </div>
         <div class="intro" data-aos="fade-up" data-aos-duration="1000">
             <div class="left">
@@ -46,11 +47,13 @@
                 <div>建築金石獎優良規劃設計類金石獎</div>
             </div>
         </div>
-        <div class="introVideo">
-            <iframe width="100%" height="100%" class="youtube" src="https://www.youtube.com/embed/ddZ97DKqwRo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="videoWrapperOuter">
+            <div class="videoWrapperInner">
+                <iframe width="100%" height="100%" class="youtube" src="https://www.youtube.com/embed/ddZ97DKqwRo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
         <div class="intro basicInfo" data-aos="fade-up" data-aos-duration="1000">
             <div class="left">
@@ -106,6 +109,90 @@
                 </div>
             </div>
         </div>
+        <div class="favWrap">
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/1.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/1.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/2.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/2.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <div class="favCard">
+                <a class="fancybox" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/3.jpg">
+                    <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/3.jpg">
+                        <label class="favIcon">
+                            <input type="checkbox" name="fav" class="favInput" checked />
+                            <span></span>
+                        </label>
+                    </div>
+                </a>
+            </div>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/4.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/4.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/5.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/5.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/6.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/6.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/7.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/7.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/8.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/8.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/9.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/9.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+            <a class="favCard" data-fancybox="gallery" href="/assets/image/bestSeller/wenRenYuan/10.jpg">
+                <div class="fav fav-active lazyload" data-src="/assets/image/bestSeller/wenRenYuan/10.jpg">
+                    <label class="favIcon">
+                        <input type="checkbox" name="fav" class="favInput" checked />
+                        <span></span>
+                    </label>
+                </div>
+            </a>
+        </div>
         <div class="intro" data-aos="fade-up" data-aos-duration="1000">
             <div class="left">
                 <div class="line"></div>
@@ -125,10 +212,14 @@
         </div>
     </main>
     <div id="footer"></div>
+    <!-- CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/lazysizes.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <!-- Custom -->
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/bestSeller.js"></script>
     <script>
