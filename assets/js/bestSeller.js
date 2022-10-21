@@ -13,8 +13,4 @@ $(document).ready(function () {
         var src = lazy.attr('data-src');
         lazy.css('background-image', 'url("' + src + '")');
     });
-
-    $('a[data-fancybox="gallery"]').fancybox({
-        buttons: ["close"]
-    });
 });

@@ -358,6 +358,98 @@
   }
 }
 
+/* 樂揚煦煦 */
+.videoBanner {
+  overflow: hidden;
+  display: flex;
+}
+
+.videoBanner video {
+  max-width: 100%;
+  z-index: 1;
+}
+
+.contentWrap {
+  background-color: #e2e2e2;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentWrap .title {
+  color: #b88f2b;
+  font-size: 1.5rem;
+}
+
+.contentWrap .title>div {
+  border-bottom: 2px solid #b88f2b;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contentWrap .content {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #787878;
+}
+
+.imgBanner {
+  width: 100%;
+  height: 750px;
+  display: flex;
+}
+
+.imgBanner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slickBanner.slick {
+  width: 100%;
+  margin: auto;
+}
+
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-dots li button:before {
+  color: #dcdcdc;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1200px) {
+  .imgBanner {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentWrap {
+    padding: 50px 20px;
+  }
+
+  .contentWrap .content {
+    font-size: 1rem;
+  }
+}
+
 /* 文林苑 */
 
 .videoWrapperOuter {
