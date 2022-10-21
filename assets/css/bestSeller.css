@@ -28,6 +28,7 @@
 }
 
 @media (max-width: 1280px) {
+
   .circle1,
   .circle2 {
     width: 1000px;
@@ -36,16 +37,19 @@
 }
 
 @media (max-width: 991.98px) {
+
   .circle1,
   .circle2 {
     width: 900px;
     height: 900px;
   }
+
   .circle1 {
     position: absolute;
     top: -280px;
     right: -450px;
   }
+
   .circle2 {
     position: absolute;
     bottom: -400px;
@@ -54,6 +58,7 @@
 }
 
 @media (max-width: 768.98px) {
+
   .circle1,
   .circle2 {
     width: 800px;
@@ -68,6 +73,7 @@
     top: -100px;
     right: -300px;
   }
+
   .circle2 {
     width: 500px;
     height: 500px;
@@ -133,9 +139,11 @@
     grid-template-columns: repeat(1, minmax(0px, 1fr));
     gap: 0;
   }
+
   .bestSeller {
     height: 280px;
   }
+
   .bestSeller .hoverTitle {
     font-size: 1.5rem;
   }
@@ -146,6 +154,7 @@
     height: 250px;
     margin-top: 30px;
   }
+
   .bestSeller .hoverTitle {
     font-size: 1.3rem;
   }
@@ -162,8 +171,26 @@
   object-fit: cover;
 }
 
-/* 月光之水內頁 */
-.page2 .intro {
+.backBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0;
+  }
+}
+
+.intro {
   background-color: var(--primary-color);
   color: #fff;
   padding: 80px 20px;
@@ -174,22 +201,22 @@
   position: relative;
 }
 
-.page2 .intro > div {
+.intro>div {
   width: 50%;
   display: flex;
 }
 
-.page2 .intro > .left {
+.intro>.left {
   justify-content: center;
 }
 
-.page2 .intro > .right {
+.intro>.right {
   flex-direction: column;
   padding: 0 50px;
   font-size: 1.2rem;
 }
 
-.page2 .intro .left {
+.intro .left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,13 +226,13 @@
   text-align: center;
 }
 
-.page2 .intro .left .line {
+.intro .left .line {
   width: 130px;
   height: 1px;
   background-color: #fff;
 }
 
-.page2 .intro .centerLine {
+.intro .centerLine {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -227,15 +254,116 @@
   border-bottom: 1px solid;
 }
 
-.basicInfo .right .item > div:first-child {
+.basicInfo .right .item>div:first-child {
   min-width: 130px;
   font-weight: 500;
   font-size: 1.1rem;
 }
 
-.backBtn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+@media (max-width: 1450px) {
+  .intro .left .line {
+    width: 100px;
+  }
+
+  .intro .left {
+    gap: 25px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro .left .line {
+    width: 90px;
+  }
+
+  .intro .left {
+    gap: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .intro .left .line {
+    width: 60px;
+  }
+
+  .intro .left {
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+
+  .intro>.right {
+    padding: 0 30px;
+    font-size: 1rem;
+  }
+
+  .basicInfo .right .item>div:first-child {
+    min-width: 100px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro>div {
+    width: 100%;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+    margin: 30px 0;
+  }
+
+  .intro .centerLine {
+    display: none;
+  }
+
+  .intro .left {
+    gap: 20px;
+    font-size: 1.5rem;
+  }
+
+  .intro .left .line {
+    width: 90px;
+  }
+
+  .intro>.right {
+    font-size: 1.1rem;
+  }
+
+  .intro:not(.basicInfo)>.right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    padding: 30px 20px;
+    margin: 25px 0;
+  }
+
+  .intro .left {
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+
+  .intro .left .line {
+    width: 50px;
+  }
+
+  .intro>.right {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+/* 文林苑 */
+
+.introVideo {
+  text-align: center;
+}
+
+iframe.youtube {
+  max-width: 900px;
 }
