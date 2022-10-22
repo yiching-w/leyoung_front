@@ -1,0 +1,555 @@
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle1 {
+  position: absolute;
+  top: -380px;
+  right: -537px;
+  width: 1200px;
+  height: 1200px;
+  z-index: -1;
+  background-color: #ff6464;
+  box-shadow: 0px 0px 12px #0006;
+  border-radius: 50%;
+}
+
+.circle2 {
+  position: absolute;
+  bottom: -380px;
+  left: -537px;
+  width: 1200px;
+  height: 1200px;
+  z-index: -1;
+  background-color: #ff6464;
+  box-shadow: 0px 0px 12px #0006;
+  border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+
+  .circle1,
+  .circle2 {
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .circle1,
+  .circle2 {
+    width: 900px;
+    height: 900px;
+  }
+
+  .circle1 {
+    position: absolute;
+    top: -280px;
+    right: -450px;
+  }
+
+  .circle2 {
+    position: absolute;
+    bottom: -400px;
+    left: -500px;
+  }
+}
+
+@media (max-width: 768.98px) {
+
+  .circle1,
+  .circle2 {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .circle1 {
+    width: 600px;
+    height: 600px;
+    top: -100px;
+    right: -300px;
+  }
+
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    bottom: -80px;
+    left: -240px;
+  }
+}
+
+.bestSellerList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+.bestSeller {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  box-shadow: 1px 1px 10px #0002;
+  border-radius: 30px 30px 0 0;
+  height: 330px;
+}
+
+.bestSellerImg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bestSeller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px 30px 0 0;
+}
+
+.bestSeller .hoverTitle {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  background-color: #23b2bddd;
+  bottom: 0;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.bestSeller:hover .hoverTitle {
+  height: 45%;
+}
+
+@media (max-width: 768.98px) {
+  .bestSellerList {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 0;
+  }
+
+  .bestSeller {
+    height: 280px;
+  }
+
+  .bestSeller .hoverTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .bestSeller {
+    height: 250px;
+    margin-top: 30px;
+  }
+
+  .bestSeller .hoverTitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* 認識都更 */
+
+.business .subPage {
+  width: 130px;
+  height: 130px;
+}
+
+@media (max-width:768px) {
+  .business .subPage {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.firstWrap {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 80px 20px 80px 180px;
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  margin-bottom: 20px;
+}
+
+.firstWrap .title {
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  flex: 1;
+  max-width: 300px;
+}
+
+.firstWrap .content {
+  flex: 2;
+  max-width: 800px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+
+.box {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 80px 150px 80px 180px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.box.withImg {
+  justify-content: space-between;
+}
+
+.box.onlyContent {
+  justify-content: space-between;
+  padding: 80px 400px 80px 180px;
+}
+
+.box.onlyContent .boxContent {
+  min-width: 60%;
+}
+
+.box .boxTitle {
+  font-size: 2.5rem;
+  width: fit-content;
+  max-width: 300px;
+}
+
+.box .boxContent {
+  max-width: 220px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.box .boxContent .highlight {
+  color: var(--secondary-color);
+}
+
+.box .boxImg {
+  width: 50%;
+}
+
+.box .boxImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.backBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 1500px) {
+  .firstWrap {
+    padding: 80px 20px 80px 100px;
+    gap: 200px;
+  }
+
+  .box {
+    padding: 80px 100px;
+  }
+
+  .box.onlyContent {
+    padding: 80px 400px 80px 100px;
+  }
+
+  .box .boxTitle {
+    font-size: 2.2rem;
+  }
+
+  .box .boxContent {
+    max-width: 200px;
+    font-size: 1.15rem;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .firstWrap {
+    padding: 80px 20px 80px 80px;
+    gap: 120px;
+  }
+
+  .firstWrap .title {
+    font-size: 4rem;
+  }
+
+  .box {
+    padding: 80px;
+  }
+
+  .box.onlyContent {
+    padding: 80px 300px 80px 80px;
+  }
+
+  .box .boxTitle {
+    font-size: 2rem;
+  }
+
+  .box .boxContent {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .firstWrap {
+    padding: 70px 20px 70px 50px;
+    gap: 60px;
+  }
+
+  .firstWrap .title {
+    font-size: 3.5rem;
+  }
+
+  .firstWrap .content {
+    font-size: 1.1rem;
+  }
+
+  .box {
+    padding: 70px 20px 70px 50px;
+  }
+
+  .box .boxImg {
+    width: 45%;
+  }
+
+  .box.onlyContent {
+    padding: 70px 200px 70px 50px;
+  }
+
+  .box .boxTitle {
+    font-size: 1.8rem;
+    max-width: 250px;
+  }
+
+  .box .boxContent {
+    font-size: 1rem;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 991px) {
+  .firstWrap {
+    padding: 60px 30px;
+    gap: 20px;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .firstWrap .title {
+    font-size: 3rem;
+  }
+
+  .firstWrap .content {
+    font-size: 1.05rem;
+    max-width: 550px;
+    text-align: justify;
+  }
+
+  .box {
+    padding: 60px 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box .boxTitle {
+    font-size: 2rem;
+    max-width: 500px;
+  }
+
+  .box .boxContent {
+    font-size: 1.05rem;
+    max-width: 350px;
+    text-align: justify;
+  }
+
+  .box.onlyContent {
+    padding: 60px 20px;
+  }
+
+  .box.onlyContent .boxContent {
+    min-width: 60%;
+    text-align: justify;
+  }
+
+  .box .boxImg {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .firstWrap {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .firstWrap .title {
+    font-size: 2.3rem;
+  }
+
+  .firstWrap .content {
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+
+  .box {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .box .boxTitle {
+    font-size: 1.6rem;
+  }
+
+  .box .boxContent {
+    font-size: 1rem;
+  }
+
+  .box .boxImg {
+    width: 100%;
+  }
+}
+
+/* 都更建案進度 */
+.firstWrap .tableHead {
+  background-color: #d27373;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstWrap .tableRow {
+  display: flex;
+}
+
+.firstWrap .tableRow>div {
+  width: calc(100%/3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.firstWrap .column1 {
+  background-color: #d7f1f3;
+  color: #3f4349;
+}
+
+.firstWrap .column2 {
+  background-color: #b9d3d5;
+  color: #3f4349;
+}
+
+.firstWrap .column3 {
+  background-color: #23bba3;
+  color: #fff;
+}
+
+@media (max-width:991px) {
+  .firstWrap .content {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+/* 都更相關連結 */
+
+.box.onlyContent.links {
+  justify-content: space-between;
+  padding: 80px 250px 80px 180px;
+}
+
+.links .boxContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.links .boxContent>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #2d2d2d;
+  min-height: 50px;
+  padding: 8px;
+  transition: 0.3s all ease-in-out;
+}
+
+.links .boxContent>a:hover {
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+@media (max-width: 1500px) {
+  .box.onlyContent.links {
+    padding: 80px 200px 80px 80px;
+  }
+
+  .box .boxContent {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .box.onlyContent.links {
+    padding: 80px;
+  }
+
+  .box .boxContent {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links .boxContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .box.onlyContent .boxContent {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box.onlyContent.links {
+    padding: 50px 30px;
+  }
+
+  .box.onlyContent .boxContent {
+    min-width: 100%;
+    gap: 15px;
+  }
+
+  .links .boxContent>a {
+    font-size: 1rem;
+  }
+}
