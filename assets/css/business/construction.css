@@ -148,7 +148,6 @@
 
 @media (max-width: 576px) {
   .intro .right ul li {
-    list-style-type: disc;
     margin-left: 20px;
     text-align: start;
   }
@@ -362,8 +361,6 @@
     font-size: 1rem;
   }
 }
-
-/* 文林苑 */
 
 .videoWrapperOuter {
   max-width: 900px;

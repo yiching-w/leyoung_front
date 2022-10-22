@@ -1,0 +1,392 @@
+.box {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 80px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.backBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.customerList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 20px;
+}
+
+.customer {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 1px 1px 10px #0002;
+    border-radius: 30px 30px 0 0;
+    height: 330px;
+}
+
+.customerImg {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.customer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+.customer .hoverTitle {
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    background-color: #23b2bddd;
+    bottom: 0;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.customer:hover .hoverTitle {
+    height: 45%;
+}
+
+@media (max-width: 768.98px) {
+    .customerList {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+        gap: 0;
+    }
+
+    .customer {
+        height: 280px;
+    }
+
+    .customer .hoverTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .customer {
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .customer .hoverTitle {
+        font-size: 1.3rem;
+    }
+}
+
+.intro {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 80px 20px;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.intro>div {
+    width: 50%;
+    display: flex;
+}
+
+.intro>.left {
+    justify-content: center;
+}
+
+.intro>.right {
+    flex-direction: column;
+    padding: 0 50px;
+    font-size: 1.2rem;
+}
+
+.intro .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.intro .left .line {
+    width: 130px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.intro .centerLine {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 2px;
+    background-color: #fff;
+}
+
+.intro .right ul li {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.intro .mainTitle {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.intro.mustKnow {
+    flex-direction: column;
+}
+
+.intro.mustKnow .right {
+    margin-top: 80px;
+}
+
+.intro .subTitle {
+    margin: 20px 0;
+}
+
+@media (max-width: 1600px) {
+    .intro.mustKnow>div {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1450px) {
+    .intro .left .line {
+        width: 100px;
+    }
+
+    .intro .left {
+        gap: 25px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro .left .line {
+        width: 90px;
+    }
+
+    .intro .left {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .intro.mustKnow>div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 991px) {
+    .intro .left .line {
+        width: 60px;
+    }
+
+    .intro .left {
+        gap: 10px;
+        font-size: 1.2rem;
+    }
+
+    .intro>.right {
+        padding: 0 30px;
+        font-size: 1rem;
+    }
+
+    .intro .mainTitle {
+        font-size: 1.3rem;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    .intro.mustKnow>div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro>div {
+        width: 100%;
+    }
+
+    .intro {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 20px;
+        margin: 30px 0;
+    }
+
+    .intro .centerLine {
+        display: none;
+    }
+
+    .intro .left {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .intro .left .line {
+        width: 90px;
+    }
+
+    .intro>.right {
+        font-size: 1.1rem;
+    }
+
+    .intro.mustKnow .right {
+        margin-top: 0px;
+    }
+
+    .intro.mustKnow>div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        padding: 30px 20px;
+        margin: 25px 0;
+    }
+
+    .intro .left {
+        gap: 15px;
+        font-size: 1.2rem;
+    }
+
+    .intro .left .line {
+        width: 50px;
+    }
+
+    .intro>.right {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .intro .mainTitle {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+}
+
+.linksWrap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linksWrap a {
+    background-color: #fff;
+    color: var(--primary-color);
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+}
+
+.linksWrap a:hover {
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .linksWrap a {
+        height: 50px;
+        max-width: 350px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .linksWrap a {
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.tableRow {
+    display: flex;
+    border-top: 2px solid #fff;
+}
+
+.tableRow:last-child {
+    border-bottom: 2px solid #fff;
+}
+
+.tableRow>div:first-child {
+    width: 160px;
+    min-width: 160px;
+    border-right: 2px solid #fff;
+}
+
+.tableRow>div:nth-child(2),
+.tableHeadRow>div:nth-child(2) {
+    flex: 2;
+}
+
+.tableRow>div:nth-child(3) {
+    border-left: 2px solid #fff;
+    flex: 1;
+}
+
+.tableHeadRow>div:nth-child(3) {
+    flex: 1;
+}
+
+.tableRow>div {
+    padding: 20px;
+}
+
+.tableHeadRow>div {
+    padding: 10px 20px;
+}
+
+.tableHeadRow {
+    display: flex;
+}
+
+.tableHeadRow>div:first-child {
+    width: 160px;
+    min-width: 160px;
+}
+
+@media (max-width: 576px) {
+    .tableRow>div {
+        padding: 10px;
+    }
+
+    .tableRow>div:first-child,
+    .tableHeadRow>div:first-child {
+        width: 100px;
+        min-width: 100px;
+    }
+}

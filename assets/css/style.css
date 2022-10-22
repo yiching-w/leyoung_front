@@ -507,6 +507,10 @@ footer .bottom>div {
   padding: 45px;
 }
 
+.highlight {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 768.98px) {
   .pageTitle {
     font-size: 2rem;
@@ -546,6 +550,7 @@ footer .bottom>div {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  text-align: center;
 }
 
 .subPage::after {

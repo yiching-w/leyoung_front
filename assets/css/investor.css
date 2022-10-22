@@ -1,0 +1,152 @@
+.box {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  margin-bottom: 20px;
+}
+
+/* 公司資料 */
+
+.box .content {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.information .box .content>div {
+  margin: 20px auto;
+}
+
+.information .box .content a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .box {
+    padding: 40px 20px;
+  }
+}
+
+.table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tableBody {
+  margin-top: 30px;
+}
+
+.tableRow,
+.tableHeadRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableRow>div,
+.tableHeadRow>div {
+  width: 160px;
+  min-width: 160px;
+}
+
+.shareholder .table {
+  font-size: 1.1rem;
+}
+
+.shareholder .tableHeadRow {
+  font-weight: bold;
+}
+
+.shareholder .tableRow,
+.shareholder .tableHeadRow {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 786px) {
+
+  .tableRow>div,
+  .tableHeadRow>div {
+    width: 80px;
+    min-width: 80px;
+  }
+
+  .shareholder .table {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .information .box .content {
+    margin: 0;
+  }
+
+  .box .content {
+    font-size: 1rem;
+  }
+
+  .tableRow>div,
+  .tableHeadRow>div {
+    padding: 5px;
+  }
+
+  .tableRow>div:nth-child(2),
+  .tableHeadRow>div:nth-child(2) {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .shareholder .tableRow>div,
+  .shareholder .tableHeadRow>div {
+    width: 50px;
+    min-width: 50px;
+  }
+
+  .shareholder .table {
+    font-size: 0.9rem;
+  }
+}
+
+/* 財務資訊 */
+.box .title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.duration {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.duration .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.annualReport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .box .title {
+    font-size: 2rem;
+  }
+}
+
+/* 股東資訊 */
+.shareholder img {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .shareholder img {
+    width: 30px;
+  }
+}

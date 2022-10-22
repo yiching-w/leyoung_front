@@ -170,7 +170,6 @@
     width: 80px;
     height: 80px;
     font-size: 1rem;
-    text-align: center;
   }
 }
 
@@ -235,10 +234,6 @@
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 28px;
-}
-
-.box .boxContent .highlight {
-  color: var(--secondary-color);
 }
 
 .box .boxImg {
