@@ -26,7 +26,6 @@ $('#navbar').load('/pages/share/navbar.html', function (data) {
     })
 });
 
-
 $('#footer').load('/pages/share/footer.html', function (data) {
     $('#footer').replaceWith(data);
 
@@ -42,3 +41,11 @@ $('#footer').load('/pages/share/footer.html', function (data) {
         $('html, body').animate({ scrollTop: 0 }, 800);
     });
 });
+
+$(document).ready(function () {
+    $('.lazyload_bg').each(function () {
+        var lazy = $(this);
+        var src = lazy.attr('data-src');
+        lazy.css('background-image', 'url("' + src + '")');
+    });
+})

@@ -7,10 +7,4 @@ $(document).ready(function () {
             console.log('已取消收藏');
         }
     });
-
-    $('.lazyload').each(function () {
-        var lazy = $(this);
-        var src = lazy.attr('data-src');
-        lazy.css('background-image', 'url("' + src + '")');
-    });
 });
