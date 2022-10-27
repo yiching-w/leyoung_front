@@ -1,0 +1,18 @@
+body {
+    background: #000;
+}
+
+.canvasWrap {
+    position: relative;
+    height: 100vh;
+    overflow: scroll;
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-height: 100vh;
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+}
