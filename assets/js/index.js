@@ -31,7 +31,16 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', () => {
         const scrollTop = html.scrollTop;
-        const maxScrollTop = html.scrollHeight - window.innerHeight - 2000;
+        if (scrollTop >= window.innerHeight * 5 - 500) {
+            canvas.style.opacity = '0';
+        } else {
+            canvas.style.opacity = '1';
+        }
+        const maxScrollTop = (window.innerHeight * 5 - window.innerHeight) - window.innerHeight;
+        console.log('scrollTop', scrollTop)
+        console.log('maxScrollTop', maxScrollTop)
+        console.log('html.scrollHeight', html.scrollHeight)
+        console.log('window.innerHeight', window.innerHeight)
 
         const scrollFraction = scrollTop / maxScrollTop;
         const frameIndex = Math.min(
