@@ -1,6 +1,5 @@
 $(document).ready(function () {
     const html = document.documentElement;
-    const canvasWrap = document.querySelector(".canvasWrap");
     const canvas = document.getElementById("hero-lightpass");
     const context = canvas.getContext("2d");
 
@@ -18,7 +17,7 @@ $(document).ready(function () {
 
     const img = new Image()
     img.src = currentFrame(0);
-    canvas.width = 1158;
+    canvas.width = 1300;
     canvas.height = 770;
     img.onload = function () {
         context.drawImage(img, 0, 0);
