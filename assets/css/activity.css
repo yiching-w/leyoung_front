@@ -1,0 +1,88 @@
+.activityList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 20px;
+}
+
+.activity {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 1px 1px 10px #0002;
+    border-radius: 30px 30px 0 0;
+    height: 300px;
+}
+
+.activityImg {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.activity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+.activity .hoverTitle {
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    background-color: #23b2bddd;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.activity:hover .hoverTitle {
+    height: 45%;
+    font-weight: 500;
+}
+
+@media (max-width: 1200.98px) {
+    .activity .hoverTitle {
+        font-size: 1.2rem;
+    }
+
+    .activityList {
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+}
+
+@media (max-width: 768.98px) {
+    .activityList {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+        gap: 0;
+    }
+
+    .activity {
+        height: 280px;
+    }
+
+    .activity .hoverTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .activity {
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .activity .hoverTitle {
+        font-size: 1.3rem;
+    }
+}
