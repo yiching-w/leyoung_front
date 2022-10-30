@@ -17,8 +17,8 @@ $(document).ready(function () {
 
     const img = new Image()
     img.src = currentFrame(0);
-    canvas.width = 1300;
-    canvas.height = 770;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     img.onload = function () {
         context.drawImage(img, 0, 0);
     }
