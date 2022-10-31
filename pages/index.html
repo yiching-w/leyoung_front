@@ -1,101 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+      name="viewport"
+    />
+    <title>樂揚建設</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/image/logo.png" />
+    <!-- preload -->
+    <link rel="preload" as="image" href="" />
+    <!-- cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
 
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <meta charset="UTF-8" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    name="viewport" />
-  <title>樂揚建設</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="/assets/image/logo.png" />
-  <!-- preload -->
-  <link rel="preload" as="image" href="" />
-  <!-- cdn -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- custom CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/assets/css/index.css" />
-</head>
-
-<body>
-  <div id="navbar"></div>
-  <main class="main">
-    <video src="/assets/image/index.mp4" autoplay="autoplay" loop="" muted="" playsinline="" preload="none"></video>
-    <canvas id="hero-lightpass"></canvas>
-    <div class="mainContent">
-      <div class="content">
-        <div class="section news">
-          <div class="circle1"></div>
-          <div class="text" data-aos="fade-down" data-aos-duration="1000">
-            <div class="title">最新消息</div>
-            <div class="subtitle">快來看看最近樂揚出了什麼新鮮事 !</div>
-            <div>
-              <a href="/pages/latestNews/main.html" class="mainBtn">去看看!</a>
+  <body>
+    <div id="navbar"></div>
+    <main class="main">
+      <video
+        src="/assets/image/index.mp4"
+        autoplay="autoplay"
+        loop=""
+        muted=""
+        playsinline=""
+        preload="none"
+      ></video>
+      <div style="height: 100vh">
+        <canvas id="hero-lightpass"></canvas>
+      </div>
+      <div class="mainContent">
+        <div class="content">
+          <div class="section news">
+            <div class="circle1"></div>
+            <div class="text" data-aos="fade-down" data-aos-duration="1000">
+              <div class="title">最新消息</div>
+              <div class="subtitle">快來看看最近樂揚出了什麼新鮮事 !</div>
+              <div>
+                <a href="/pages/latestNews/main.html" class="mainBtn"
+                  >去看看!</a
+                >
+              </div>
+            </div>
+            <div
+              class="text-right imgWrap"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <img src="/assets/image/index1.png" alt="" />
+            </div>
+            <div class="gif">
+              <img src="/assets/image/1.gif" alt="" />
             </div>
           </div>
-          <div class="text-right imgWrap" data-aos="fade-down" data-aos-duration="1000">
-            <img src="/assets/image/index1.png" alt="">
-          </div>
-          <div class="gif">
-            <img src="/assets/image/1.gif" alt="">
-          </div>
-        </div>
-        <div class="section bestSeller">
-          <div class="circle2"></div>
-          <div class="imgWrap" data-aos="fade-down" data-aos-duration="1000">
-            <img src="/assets/image/index2.png" alt="">
-          </div>
-          <div class="text news" data-aos="fade-down" data-aos-duration="1000">
-            <div class="title">熱銷建案</div>
-            <div class="subtitle">來看看最受歡迎的樂揚作品吧 !</div>
-            <div>
-              <a href="/pages/bestSeller/main.html" class="mainBtn">去看看!</a>
+          <div class="section bestSeller">
+            <div class="circle2"></div>
+            <div class="imgWrap" data-aos="fade-down" data-aos-duration="1000">
+              <img src="/assets/image/index2.png" alt="" />
+            </div>
+            <div
+              class="text news"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <div class="title">熱銷建案</div>
+              <div class="subtitle">來看看最受歡迎的樂揚作品吧 !</div>
+              <div>
+                <a href="/pages/bestSeller/main.html" class="mainBtn"
+                  >去看看!</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="section constructions">
-          <div class="circle3"></div>
-          <div class="text" data-aos="fade-down" data-aos-duration="1000">
-            <div class="title">完工個案</div>
-            <div class="subtitle">來看看樂揚團隊的優秀作品吧 !</div>
-            <div>
-              <a href="/pages/business/construction/main.html" class="mainBtn">去看看!</a>
+          <div class="section constructions">
+            <div class="circle3"></div>
+            <div class="text" data-aos="fade-down" data-aos-duration="1000">
+              <div class="title">完工個案</div>
+              <div class="subtitle">來看看樂揚團隊的優秀作品吧 !</div>
+              <div>
+                <a href="/pages/business/construction/main.html" class="mainBtn"
+                  >去看看!</a
+                >
+              </div>
+            </div>
+            <div
+              class="text-right imgWrap"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <img src="/assets/image/index3.png" alt="" />
             </div>
           </div>
-          <div class="text-right imgWrap" data-aos="fade-down" data-aos-duration="1000">
-            <img src="/assets/image/index3.png" alt="">
-          </div>
-        </div>
-        <div class="section about">
-          <div class="circle4"></div>
-          <div class="circle5"></div>
-          <div class="imgWrap" data-aos="fade-down" data-aos-duration="1000">
-            <img src="/assets/image/index4.png" alt="">
-          </div>
-          <div class="text" data-aos="fade-down" data-aos-duration="1000">
-            <div class="title">關於樂揚</div>
-            <div class="subtitle">來看看創建樂揚的精彩過程吧 !</div>
-            <div>
-              <a href="/pages/about/main.html" class="mainBtn">去看看!</a>
+          <div class="section about">
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+            <div class="imgWrap" data-aos="fade-down" data-aos-duration="1000">
+              <img src="/assets/image/index4.png" alt="" />
+            </div>
+            <div class="text" data-aos="fade-down" data-aos-duration="1000">
+              <div class="title">關於樂揚</div>
+              <div class="subtitle">來看看創建樂揚的精彩過程吧 !</div>
+              <div>
+                <a href="/pages/about/main.html" class="mainBtn">去看看!</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <div id="footer"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="/assets/js/script.js"></script>
-  <script src="/assets/js/index.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    </main>
+    <div id="footer"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
