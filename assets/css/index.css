@@ -4,15 +4,11 @@ body {
 }
 
 .main {
-  padding: 70px 0 0;
+  padding: 0;
 }
 
 canvas {
   position: fixed;
-  width: 100vw;
-  object-fit: fill;
-  height: 100vh;
-  object-fit: cover;
   transition: 0.5s all ease-in-out;
   z-index: -1;
 }
@@ -446,7 +442,10 @@ video {
 
   canvas {
     display: none;
+  }
 
+  .main {
+    padding: 70px 0 0;
   }
 
   video {

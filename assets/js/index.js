@@ -19,13 +19,21 @@ $(document).ready(function () {
     img.src = currentFrame(0);
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
     img.onload = function () {
-        context.drawImage(img, 0, 0);
+        var ratio = img.naturalWidth / img.naturalHeight;
+        var width = canvas.width;
+        var height = width / ratio;
+        context.drawImage(img, 0, 0, width, height);
+
     }
 
     const updateImage = index => {
         img.src = currentFrame(index);
-        context.drawImage(img, 0, 0);
+        var ratio = img.naturalWidth / img.naturalHeight;
+        var width = canvas.width;
+        var height = width / ratio;
+        context.drawImage(img, 0, 0, width, height);
     }
 
     window.addEventListener('scroll', () => {
